@@ -1,0 +1,146 @@
+/* Aplica uma fonte padrão e define o cursor padrão para todos os elementos */
+* {
+    font-family: Helvetica Neue, Helvetica, Arial;
+    font-weight: 400;
+    cursor: default;
+  }
+  
+  /* Define a cor de fundo do corpo da página */
+  body {
+    background-color: #f8f8f8;
+    background-image: url(img/Background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+  }
+  
+  /* Estiliza o título principal do jogo */
+  #titulo {
+    font-size: 40px;
+    color: #0e0d0c;
+    text-align: center;
+  }
+  
+  /* Define o layout do placar com flexbox, centralizando os elementos */
+  #placar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Estiliza as seções do jogador e do computador */
+  #jogador, #computador {
+    position: relative;
+    flex-grow: 1;
+    border-radius: 5px;
+    width: 200px;
+    padding: 20px;
+    color: #be6608;
+  }
+  
+  /* Define a cor de fundo da seção do jogador */
+  #jogador {
+    background-color: #0a82ec56;
+  }
+  
+  /* Define a cor de fundo da seção do computador */
+  #computador {
+    background-color: #0a82ec56;
+  }
+  
+  /* Estiliza o texto "vs" que fica entre as seções do jogador e do computador */
+  #versus {
+    width: 200px;
+    text-align: center;
+    font-size: 72px;
+    font-weight: 300;
+  }
+  
+  /* Remove margem e padding dos nomes do jogador e do computador */
+  #jogador-nome, #computador-nome {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Alinha o nome do jogador à esquerda */
+  #jogador-nome {
+    text-align: left;
+  }
+  
+  /* Alinha o nome do computador à direita */
+  #computador-nome {
+    text-align: right;
+  }
+  
+  /* Estiliza as pontuações do jogador e do computador */
+  #jogador-pontos, #computador-pontos {
+    position: absolute;
+    top: 8px;
+    font-size: 72px;
+  }
+  
+  /* Posiciona a pontuação do jogador à direita */
+  #jogador-pontos {
+    right: 20px;
+  }
+  
+  /* Posiciona a pontuação do computador à esquerda */
+  #computador-pontos {
+    left: 20px;
+  }
+  
+  /* Estiliza as listas de escolhas do jogador e do computador */
+  #jogador-escolha, #computador-escolha {
+    list-style: none;
+    text-align: center;
+    margin: 30px 0 0;
+    padding: 0;
+  }
+  
+  /* Estiliza os itens da lista de escolhas */
+  #jogador-escolha li, #computador-escolha li {
+    display: inline;
+    padding: 0 15px;
+  }
+  
+  /* Estiliza os links das escolhas, ajustando a opacidade */
+  #jogador-escolha a, #computador-escolha a {
+    opacity: .2;
+    padding: 5px;
+  }
+  
+  /* Ajusta a opacidade ao passar o mouse sobre a escolha ou quando selecionado */
+  #jogador-escolha a:hover, #jogador-escolha a.selecionado, 
+  #computador-escolha a.selecionado {
+    opacity: 1;
+  }
+  
+  /* Define o tamanho máximo das imagens das escolhas */
+  #jogador-escolha img, #computador-escolha img {
+    max-width: 80px;
+  }
+  
+  /* Estiliza a caixa de mensagens */
+  #mensagem {
+    border-radius: 25px;
+    background-color: #b9fcb4;
+    font-size: 25px;
+    color: #111010;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  /* Conteudo para estilizar as mensagens*/
+  .alerta {
+    background-color: #a5a0a0;
+    border: 1px solid #1f6cca;
+    border-radius: 15%;
+    padding: 20px;
+    text-align: center;
+    position: fixed; /* Posiciona o alerta em relação à viewport */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o alerta */
+}

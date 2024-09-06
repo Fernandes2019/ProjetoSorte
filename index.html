@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Meta tag para definir o conjunto de caracteres -->
+  <meta charset="utf-8">
+  <!-- Meta tag para garantir compatibilidade com o Internet Explorer -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Link para o arquivo CSS externo -->
+  <link rel="stylesheet" href="estilo.css"> 
+
+  <!-- Título da página -->
+  <title>Elementares</title>
+</head>
+<body>
+  <!-- Div principal que contém todo o conteúdo do jogo -->
+  <div id="principal">
+    <!-- Título do jogo -->
+    <h1 id="titulo">Escolha um dos personagens para lutar</h1>
+
+    <!-- Div que contém o placar -->
+    <div id="placar">
+      <!-- Seção do jogador -->
+      <div id="jogador">
+        <!-- Nome do jogador (inicialmente vazio) -->
+        <h2 id="jogador-nome">&nbsp;</h2>
+        <!-- Pontuação do jogador (inicialmente 0) -->
+        <span id="jogador-pontos">0</span>
+        <!-- Lista de escolhas do jogador: Rocha, Grama e Fogo -->
+        <ul id="jogador-escolha">
+          <!-- Opção Rocha -->
+          <li><a id="jogador-escolha-1"><img src="img/pedra.png"></a></li>
+          <!-- Opção Grama-->
+          <li><a id="jogador-escolha-2"><img src="img/Grama.png"></a></li>
+          <!-- Opção Fogo -->
+          <li><a id="jogador-escolha-3"><img src="img/Fogo.png"></a></li>
+        </ul>
+      </div>
+
+      <!-- Texto que indica a competição -->
+      <div id="versus">vs</div>
+
+      <!-- Seção do computador -->
+      <div id="computador">
+        <!-- Nome do computador -->
+        <h2 id="computador-nome">Computador</h2>
+        <!-- Pontuação do computador (inicialmente 0) -->
+        <span id="computador-pontos">0</span>
+        <!-- Lista de escolhas do computador: Rocha, Grama, Fogo -->
+        <ul id="computador-escolha">
+          <!-- Opção Rocha -->
+          <li><a id="computador-escolha-1"><img src="img/pedra.png"></a></li>
+          <!-- Opção Grama -->
+          <li><a id="computador-escolha-2"><img src="img/Grama.png"></a></li>
+          <!-- Opção Fogo -->
+          <li><a id="computador-escolha-3"><img src="img/Fogo.png"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script que contém a lógica do jogo -->
+  <script src="index.js"></script>
+</body>
+</html>
